@@ -41,10 +41,10 @@ git clone https://github.com/hvygmr/redmine_theme_easy_on_eyes.git
 # (or)
 git clone git@github.com:hvygmr/redmine_theme_easy_on_eyes.git
 
-#git pull
-sudo rsync -auv --exclude=.git --exclude=*~ --exclude=.*~ --delete-excluded \
-                ../redmine_theme_easy_on_eyes/* /var/lib/redmine/public/themes/easy_on_eyes
-sudo chown -R www-data:www-data /var/lib/redmine/public/themes/easy_on_eyes
+INSTALL_DIR=/var/lib/redmine
+TARGET=${INSTALL_DIR}/public/themes/easy_on_eyes
+sudo rsync -auv --exclude=.git --exclude=*~ --exclude=.*~ --delete-excluded ../redmine_theme_easy_on_eyes/*  ${TARGET}
+sudo chown -R www-data:www-data ${TARGET} ; sudo find ${TARGET} -type f -exec chmod 644 {} \;
 ```
 
 サーバーの再起動などは不要で、設定の変更画面のドロップダウンに表示されるようになります（後述）。
@@ -53,6 +53,6 @@ sudo chown -R www-data:www-data /var/lib/redmine/public/themes/easy_on_eyes
 
 Redmineの管理画面で新しいテーマを利用する設定を行います。
 
-「管理」→「設定」→「表示」画面内の項目「テーマ」で「Farend basic customized」を選択、
+「管理」→「設定」→「表示」画面内の項目「テーマ」で「Easy on Eyes」を選択、
 画面最下部の「保存」ボタンをクリックしてください。
 
