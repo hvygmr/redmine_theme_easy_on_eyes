@@ -20,9 +20,28 @@ body {
    * font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;
    */
   font-family: Ubuntu, Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;
+  font-family: "Ubuntu Mono", "Noto Sans Mono CJK JP", monospace, sans-serif, courier;
   font-size: 13px;
   color: #222;
-  background-color: #f8fff8;
+  color: #f0f0f0;
+  color: #fff;
+}
+#header {
+  /*
+  background-color: #628db6	!important;
+  background-color: #1f8197	!important;
+  */
+  background-color: #379fb6	!important;
+}
+#content {
+  background-color: #f0fff0	!important;
+  background-color: #1f8197	!important;
+  color:            #fff;
+}
+a, a:link, a:visited {
+  color: #169;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*
@@ -34,14 +53,41 @@ h1, h2, h3, h4 {
 #header h1 {
   font-size: 22px;
   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
 #content h1, h2, h3, h4 {
   color: #222;
+  color: #f0f0f0;
+  color: #fff;
+}
+#content h3.icon {
+  color: #222;
+}
+#content div.box a {
+  color: #222;
+  text-decoration: underline;
+}
+#activity h3 {
+  color: #222;
+}
+#content table.list * {
+  color: #222;
+}
+#content table.list a {
+  text-decoration: underline;
+}
+#gantt_area * {
+  color: #222;
+}
+#content table.cal {
+  color: #222;
 }
 
+
 #sidebar h3 {
-  color: #484848
+  color: #484848;
+  color: #fff;
 }
 
 #main-menu li a {
@@ -51,6 +97,20 @@ h1, h2, h3, h4 {
 #main-menu li a.selected, #main-menu li a.selected:hover {
   color: #222;
   box-shadow: 3px -2px 2px rgba(0, 0, 0, 0.1);
+}
+#main-menu ul li a:hover {
+  background-color: #194954;
+}
+#main-menu li a.new-object {
+  background-color: #759FCF;
+  background-color: #194954;
+}
+
+#footer {
+  background-color: #379FB6;
+}
+#footer, #footer * {
+  color: #fff;
 }
 
 
@@ -259,12 +319,14 @@ input[type="submit"], input[type="reset"] {
 
 input[type="text"] {
   font-family: "Osaka-Mono", "MS Gothic", sans-serif;
+  font-family: "Ubuntu Mono", "Noto Sans Mono CJK JP", monospace, sans-serif, courier;
   font-size: 100%;
 }
 
 textarea.wiki-edit {
   font-size: 14px;
   font-family: "Osaka-Mono", "MS Gothic", sans-serif;
+  font-family: "Ubuntu Mono", "Noto Sans Mono CJK JP", monospace, sans-serif, courier;
   letter-spacing: normal;
   line-height: 130%;
 }
@@ -286,15 +348,19 @@ div.issue .next-prev-links {
 }
 
 div#activity dt .time {
-  color: #484848
+  color: #484848;
+  color: #fff;
 }
 
 div#activity dd span.description, #search-results dd span.description {
-  color: #484848
+  color: #484848;
+  color: #fff;
+  color: gold;
 }
 
 table#time-report tbody tr {
-  color: #484848
+  color: #484848;
+  color: #fff;
 }
 
 form .attributes {
@@ -315,7 +381,8 @@ div.wiki-page .contextual a {
 }
 
 ul.projects div.root a.project {
-  font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic"
+  font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic";
+  font-family: "Ubuntu Mono", "Noto Sans Mono CJK JP", monospace, sans-serif, courier;
 }
 
 p.other-formats {
@@ -350,6 +417,11 @@ div.wiki li {
 #top-menu #loggedas {
     color: #ccc;
 }
+#top-menu {
+    background: #3E5B76;
+    background-color: #194954;
+    color: #fff;
+}
 
 #login-form input#username, #login-form input#password {
     font-size: 15px;
@@ -382,6 +454,8 @@ table.cal div.assigned-to-me a {
 #sidebar {
   width: 20%;
   font-size: 12px;
+  background-color: #3e4e3e;
+  background-color: #194954;
 }
 
 #content {
@@ -464,6 +538,16 @@ body.controller-news.action-index .wiki {
 
 .contextual .icon:first-child, .buttons .icon:first-child {
   margin-left: 0;
+}
+
+legend.icon {
+	color: #fff;
+}
+.description {
+	color: #fff;
+}
+#content .tabs ul li a {
+	color: #fff;
 }
 
 /* リポジトリ画面でコミットメッセージを目立たせる */

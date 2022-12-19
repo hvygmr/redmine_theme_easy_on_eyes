@@ -1,8 +1,11 @@
-# Redmine用テーマ "farend basic customized"
+# Redmine用テーマ "Easy on Eyes"
 
 ## このテーマについて
 
-下記のテーマを元に個人的にカスタマイズしたものです。
+
+既存のテーマ "farend_basic" のCSSを参考に、目に優しい色使いを意識してカスタマイズしたものです。
+
+fork元URL：
 https://github.com/farend/redmine_theme_farend_basic
 
 > Redmine用のカスタムテーマです。日本語環境で見やすい画面を実現することを目的に、Redmine付属のデフォルトテーマを元に作成したものです。
@@ -34,13 +37,14 @@ cloneは初回のみ：
 ```
 cd github-workspace/
 
-git clone https://github.com/hvygmr/redmine_theme_farend_basic_customized.git
-#or
-git clone git@github.com:hvygmr/redmine_theme_farend_basic_customized.git
+git clone https://github.com/hvygmr/redmine_theme_easy_on_eyes.git
+# (or)
+git clone git@github.com:hvygmr/redmine_theme_easy_on_eyes.git
 
-git pull
-sudo rsync -auv --exclude=.git redmine_theme_farend_basic_customized/* /var/lib/redmine/public/themes/farend_basic_customized/
-sudo chown -R www-data:www-data /var/lib/redmine/public/themes/farend_basic_customized
+#git pull
+sudo rsync -auv --exclude=.git --exclude=*~ --exclude=.*~ --delete-excluded \
+                ../redmine_theme_easy_on_eyes/* /var/lib/redmine/public/themes/easy_on_eyes
+sudo chown -R www-data:www-data /var/lib/redmine/public/themes/easy_on_eyes
 ```
 
 サーバーの再起動などは不要で、設定の変更画面のドロップダウンに表示されるようになります（後述）。
