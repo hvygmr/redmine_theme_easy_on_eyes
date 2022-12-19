@@ -568,7 +568,17 @@ legend.icon {
 	color: #fff;
 }
 #content .tabs ul li a {
-	color: #fff;
+  color: #fff;
+}
+#content .tabs ul li a:hover {
+  color: #222;
+  background-color: #eee;
+}
+#tab-content-general form div div.jstTabs.tabs ul li a {
+  color: #222;
+}
+#issue-form div div div.jstTabs.tabs ul li a {
+  color: #222;
 }
 
 /* リポジトリ画面でコミットメッセージを目立たせる */
@@ -632,3 +642,11 @@ table.revision-info a:hover {
 @media print {
   #main.visible-sidebar #sidebar, #sidebar-switch-panel { display:none; }
 }
+
+/*
+ * #content div.box.tabular *, #content div.box.tabular * * {
+ */
+#content #preview_project_description h2 {
+  color: #222;
+}
+
