@@ -21,7 +21,7 @@ body {
    */
   font-family: Ubuntu, Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;
   font-family: "Ubuntu Mono", "Noto Sans Mono CJK JP", monospace, sans-serif, courier;
-  font-size: 13px;
+  font-size: 12pt;
   color: #222;
   color: #f0f0f0;
   color: #fff;
@@ -32,8 +32,14 @@ body {
   background-color: #1f8197	!important;
   */
   background-color: #379fb6	!important;
-  height: 2em;
-  padding: 0.1em 1.2em 0em 0.8em;
+  padding: 0.8em 1.0em 0em 1.0em;
+}
+#header ul {
+  margin: 0em;
+  padding: 0em;
+}
+#quick-search input#q {
+  width: 20em;
 }
 #content {
   background-color: #f0fff0	!important;
@@ -94,8 +100,11 @@ h1, h2, h3, h4 {
   color: #fff;
 }
 
+#main-menu {
+  margin: 0em;
+}
 #main-menu li a {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 #main-menu li a.selected, #main-menu li a.selected:hover {
@@ -131,7 +140,7 @@ a#toggle-completed-versions {
 /***** Tables *****/
 
 table.list {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 table.list th {
@@ -139,7 +148,7 @@ table.list th {
 }
 
 table.attributes {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 table.attributes td {
@@ -168,7 +177,7 @@ table.list.issues tr.closed td {
 
 tr.assigned-to-me td.assigned_to, tr.created-by-me td.author {
   font-weight: bold;
-  font-size: 11px;
+  font-size: 1em;
 }
 
 td.parent {
@@ -301,7 +310,7 @@ tr.priority-lowest a {
 }
 
 .contextual {
-  font-size: 12px
+  font-size: 1em;
 }
 
 .issue .contextual {
@@ -316,7 +325,7 @@ tr.priority-lowest a {
 input[type="submit"], input[type="reset"] {
   -webkit-appearance: button;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 /* テキストボックスで等幅フォントを使用 */
@@ -328,7 +337,7 @@ input[type="text"] {
 }
 
 textarea.wiki-edit {
-  font-size: 14px;
+  font-size: 1.2em;
   font-family: "Osaka-Mono", "MS Gothic", sans-serif;
   font-family: "Ubuntu Mono", "Noto Sans Mono CJK JP", monospace, sans-serif, courier;
   letter-spacing: normal;
@@ -348,7 +357,7 @@ div.issue .next-prev-links {
 }
 
 .buttons {
-  font-size: 12px
+  font-size: 1em;
 }
 
 div#activity dt .time {
@@ -377,7 +386,11 @@ form .attributes p {
 }
 
 form#issue-form small {
-  font-size: 11px;
+  font-size: 1em;
+}
+
+#content .issue, #content .issue * {
+  color: #222;
 }
 
 div.wiki-page .contextual a {
@@ -390,7 +403,7 @@ ul.projects div.root a.project {
 }
 
 p.other-formats {
-  font-size: 12px;
+  font-size: 1em;
   color: #484848;
 }
 
@@ -425,10 +438,14 @@ div.wiki li {
     background: #3E5B76;
     background-color: #194954;
     color: #fff;
+    font-size: 1em;
+}
+#top-menu a {
+    padding: 0em 0.2em;
 }
 
 #login-form input#username, #login-form input#password {
-    font-size: 15px;
+    font-size: 1.2em;
     padding: 3px;
 }
 
@@ -457,7 +474,7 @@ table.cal div.assigned-to-me a {
 /* サイドバーの幅を狭く */
 #sidebar {
   width: 20%;
-  font-size: 12px;
+  font-size: 1em;
   background-color: #3e4e3e;
   background-color: #194954;
 }
@@ -483,7 +500,7 @@ a[href*="activity"][data-absolute-date*=":"]:before {
 }
 
 .author {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 div.projects.box > ul > li > a {
@@ -496,7 +513,7 @@ div.journal {
 }
 
 div.journal ul.details {
-  font-size: 12px;
+  font-size: 1em;
   color: #444;
   background: #f6f6f6;
   border-radius: 3px;
@@ -516,7 +533,7 @@ div.journal ul.details i:after {
 }
 
 div.journal h4:first-child {
-  font-size: 12px;
+  font-size: 1em;
   font-weight: normal;
   color: #444;
 }
