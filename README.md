@@ -19,16 +19,28 @@ https://github.com/farend/redmine_theme_farend_basic
 ## 利用環境
 
 - Redmine 4.2
+	- インストールディレクトリ： /var/lib/redmine
 - Ubuntu Linux 20.04.5 LTS 日本語環境 Remix
 
 ## インストール方法
 
 ### 1: テーマが格納されたディレクトリを作成
 
-Redmineのインストールディレクトリで以下のコマンドを実行してください。
+以下のコマンドを実行してください。
+インストール環境の権限次第では直接cloneできるかもしれません。
+下記はRedmine の所有者が www-data というユーザーである場合の例です。
 
+cloneは初回のみ：
 ```
-git clone https://github.com/farend/redmine_theme_farend_basic_customized.git /var/lib/redmine/public/themes/farend_basic_customized
+cd github-workspace/
+
+git clone https://github.com/hvygmr/redmine_theme_farend_basic_customized.git
+#or
+git clone git@github.com:hvygmr/redmine_theme_farend_basic_customized.git
+
+git pull
+sudo rsync -auv --exclude=.git redmine_theme_farend_basic_customized/* /var/lib/redmine/public/themes/farend_basic_customized/
+sudo chown -R www-data:www-data /var/lib/redmine/public/themes/farend_basic_customized
 ```
 
 サーバーの再起動などは不要で、設定の変更画面のドロップダウンに表示されるようになります（後述）。
